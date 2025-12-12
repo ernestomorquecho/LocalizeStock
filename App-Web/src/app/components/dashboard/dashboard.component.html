@@ -1,0 +1,16 @@
+<div class="dashboard-layout">
+  <aside class="sidebar">
+    <div class="brand">LocalizeStock Web</div>
+    <nav>
+      <a routerLink="/app/productos" routerLinkActive="active">📦 Productos</a>
+      <a routerLink="/app/tiendas" routerLinkActive="active">🏪 Tiendas</a>
+      <a routerLink="/app/historial" routerLinkActive="active">📉 Historial</a>
+      <a routerLink="/app/estado" routerLinkActive="active">🟢 Estado Sistema</a>
+      <a routerLink="/login" class="logout">🚪 Salir</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

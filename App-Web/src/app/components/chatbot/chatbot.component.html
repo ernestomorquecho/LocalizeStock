@@ -1,0 +1,36 @@
+@if (isOpen()) {
+  <div class="chat-window">
+    <div class="chat-header">
+      <div class="header-info">
+        <span class="bot-avatar">🤖</span>
+        <div>
+          <h4>Asistente AI</h4>
+          <small>En línea</small>
+        </div>
+      </div>
+      <button class="close-btn" (click)="toggleChat()">×</button>
+    </div>
+
+    <div class="messages-area">
+      <div class="message bot">
+        <p>¡Hola! Soy tu asistente de LocalizeStock. Pregúntame por productos como "leche" o "laptops".</p>
+      </div>
+
+      <div class="message user">
+        <p>Hola, busco una NVIDIA 1650</p>
+      </div>
+      <div class="message bot">
+        <p>He encontrado 2 tiendas con stock cerca de ti.</p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" placeholder="Escribe tu consulta..." />
+      <button class="send-btn">➤</button>
+    </div>
+  </div>
+}
+
+<div class="chatbot-trigger" (click)="toggleChat()" [class.hidden]="isOpen()">
+  <div class="bot-icon">💬</div>
+</div>

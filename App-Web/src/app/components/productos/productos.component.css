@@ -1,0 +1,23 @@
+/* Agrega o reemplaza esto en tu CSS */
+
+.btn-locate {
+  background-color: #2563eb; /* Azul mapa */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px; /* Bordes redondos tipo botón de acción */
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-locate:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
